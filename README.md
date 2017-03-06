@@ -64,3 +64,5 @@ firebase.init({
 });
 
  ```
+ 
+ - after the project is build, open the native project (platforms/ios/<your-app-name>.xcodeproj) in Xcode and make sure that in the Capabilities tab you had your Push Notifications enabled (ON) . 
