@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/niliev/Desktop/repositories/TNSPushTest/platforms/android/build/intermediates/res/merged/F0F1/debug/drawable-xxxhdpi/logo.png",
+        "source": "/Users/niliev/Desktop/repositories/TNSPushTest/platforms/android/src/main/res/drawable-xxxhdpi/logo.png"
+    },
+    {
+        "merged": "/Users/niliev/Desktop/repositories/TNSPushTest/platforms/android/build/intermediates/res/merged/F0F1/debug/drawable-xxxhdpi/icon.png",
+        "source": "/Users/niliev/Desktop/repositories/TNSPushTest/platforms/android/src/main/res/drawable-xxxhdpi/icon.png"
+    },
+    {
+        "merged": "/Users/niliev/Desktop/repositories/TNSPushTest/platforms/android/build/intermediates/res/merged/F0F1/debug/drawable-xxxhdpi/background.png",
+        "source": "/Users/niliev/Desktop/repositories/TNSPushTest/platforms/android/src/main/res/drawable-xxxhdpi/background.png"
+    }
+]
