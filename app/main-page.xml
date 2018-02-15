@@ -4,7 +4,7 @@ of which NativeScript renders with a platform-specific iOS or Android native con
 You can find a full list of user interface components you can use in your app at
 https://docs.nativescript.org/ui/components.
 -->
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onLoaded" navigatingTo="navigatingTo" class="page">
 
     <Page.actionBar>
         <ActionBar title="My App" icon="" class="action-bar">
