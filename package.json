@@ -4,7 +4,10 @@
   "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
   "nativescript": {
-    "id": "org.nativescript.TNSPushTest"
+    "id": "org.nativescript.TNSPushTest",
+    "tns-ios": {
+      "version": "3.4.1"
+    }
   },
   "dependencies": {
     "nativescript-plugin-firebase": "^5.1.6",

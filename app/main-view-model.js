@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var observable_1 = require("data/observable");
 var nativescript_plugin_firebase_1 = require("nativescript-plugin-firebase");
-var HelloWorldModel = (function (_super) {
+var HelloWorldModel = /** @class */ (function (_super) {
     __extends(HelloWorldModel, _super);
     function HelloWorldModel() {
         var _this = _super.call(this) || this;

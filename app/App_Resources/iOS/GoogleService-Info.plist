@@ -7,34 +7,34 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>340376852753-2nkls9a74fd1un003vgr7oslqmpv0ein.apps.googleusercontent.com</string>
+	<string>1098771671102-7b1laeda87jjd8m4o1rg4gdqdlds9l8o.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.340376852753-2nkls9a74fd1un003vgr7oslqmpv0ein</string>
+	<string>com.googleusercontent.apps.1098771671102-7b1laeda87jjd8m4o1rg4gdqdlds9l8o</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAcw3bLiLZxucSCVH8D0qxwmB7qPYzBdrE</string>
+	<string>AIzaSyBs5HhrqrNaDz24NKDLlsEvzV0dovVi8H0</string>
 	<key>GCM_SENDER_ID</key>
-	<string>340376852753</string>
+	<string>1098771671102</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>org.nativescript.TNSPushTest</string>
 	<key>PROJECT_ID</key>
-	<string>tns-test-push</string>
+	<string>tnspushtest</string>
 	<key>STORAGE_BUCKET</key>
-	<string>tns-test-push.appspot.com</string>
+	<string>tnspushtest.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:340376852753:ios:7acc1c0a5889870e</string>
+	<string>1:1098771671102:ios:7acc1c0a5889870e</string>
 	<key>DATABASE_URL</key>
-	<string>https://tns-test-push.firebaseio.com</string>
+	<string>https://tnspushtest.firebaseio.com</string>
 </dict>
 </plist>
