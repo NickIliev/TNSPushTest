@@ -19,22 +19,21 @@ This POC application will demonstrate how to use `nativescript-plugin-firebase` 
 
 POC application using NativeScrit 3.X.X and above and `nativescript-plugin-firebase`
 
-- create your app with the desired name
+- Create your app with the desired name
 `tns create TNSPushTest --tsc`
 
-- sigh with the provision profile
+- Sigh with the provision profile
 `tns run ios --provision <Your-Provision-Profile-Name>`
 
-- add the plugin and during the installation choose **y** when asked if you want to use Cloud Messaging (push notifications)
+- Add the plugin and during the installation choose **y** when asked if you want to use Cloud Messaging (push notifications)
 `npm i nativescript-plugin-firebase --save`
 
 ## iOS
 
-- place your `GoogleService-info.plist` file (generated from firebase console) in `app/App_Resources/iOS`
+- Place your `GoogleService-info.plist` file (generated from Firebase console) in `app/App_Resources/iOS`.
+In `app/App_Resources/iOS` create a file called `<Your-App-Name>.entitlements` and the following:
 
-in `app/App_Resources/iOS` create file called `<Your-App-Name>.entitlements` and the following
-
-Exmaple `app/App_Resources/iOS/TNSPushTest.entitlements`
+Example `app/App_Resources/iOS/TNSPushTest.entitlements`
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -46,7 +45,7 @@ Exmaple `app/App_Resources/iOS/TNSPushTest.entitlements`
 </plist>
 ```
 
-- in `app/App_Resources/iOS` locate your `Info.plist` file and add the following
+- In `app/App_Resources/iOS` locate your `Info.plist` file and add the following
 ```XML
 <key>UIBackgroundModes</key>
 <array>
@@ -54,7 +53,7 @@ Exmaple `app/App_Resources/iOS/TNSPushTest.entitlements`
 </array>
 ```
 
-- in `app/App_Resources/iOS` add the entitlments file to `build.xcconfig` using the app name and the entitlments file name.
+- In `app/App_Resources/iOS` add the entitlments file to `build.xcconfig` using the app name and the entitlments file name.
 
 ```JS
 CODE_SIGN_ENTITLEMENTS = TNSPushTest/Resources/TNSPushTest.entitlements;
@@ -64,9 +63,9 @@ CODE_SIGN_ENTITLEMENTS = TNSPushTest/Resources/TNSPushTest.entitlements;
 
 ## Android
 
-- place your `google-services.json` file (generated from firebase console) in `app/App_Resources/Android`
+- Place your `google-services.json` file (generated from Firebase console) in `app/App_Resources/Android`
 
-in `app/App_Resources/Android` add the following in the `AndroidManifest.xml`file within the `<application>` tag
+In `app/App_Resources/Android` add the following in the `AndroidManifest.xml`file within the `<application>` tag
 ```XML
     <service android:name="org.nativescript.plugins.firebase.MyFirebaseInstanceIDService">
         <intent-filter>
