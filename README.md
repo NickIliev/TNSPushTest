@@ -1,4 +1,4 @@
-# Setting Push Notification in your NativeScript applicaiton
+# Push Notification in your NativeScript application
 
 Requirments:
 - NativeScript 3.x.x and above
@@ -6,7 +6,7 @@ Requirments:
 - Firebase console account
 - On iOS we would need **APNS certificate** and the corresponding provisioning profile for our application.
 
-This POC application will demonstrate how to use `nativescript-plugin-firebase` to send push notifications (Firebase Cloud Messaging) on both iOS and Android. We will use the FCM REST API to send notificaitions using [Postman](https://www.getpostman.com/)
+This POC application will demonstrate how to use [`nativescript-plugin-firebase`](https://github.com/EddyVerbruggen/nativescript-plugin-firebase/blob/master/docs/MESSAGING.md) to send push notifications (Firebase Cloud Messaging) on both iOS and Android. We will use the FCM REST API to send notificaitions using [Postman](https://www.getpostman.com/)
 
 * [Create application](#create-application)
 * [iOS](#ios)
@@ -81,7 +81,8 @@ In `app/App_Resources/Android` add the following in the `AndroidManifest.xml`fil
 ```
 
 ## Firebase Console
-
+- From [Firebase console](https://console.firebase.google.com/) download `GoogleService-Info.plist` for iOS and place it in `app/App_Resources/iOS/`
+- From [Firebase console](https://console.firebase.google.com/) download `google-services.json` for Android and place it in `app/App_Resources/Android/`
 - In your [Firebase console](https://console.firebase.google.com/) add the created certificate for push notifications in iOS (see `app/images/push-certificate.png` for details)
  
  `app.ts`
@@ -181,4 +182,4 @@ Sending to multiple devices using multiple FCM device tokens can be achieved wit
 > Note: Sending to User Segment is not possible via FCM Rest APi (meaning we can't send to all users via HTTP requests).
 The REST API provides possibilities to send only via FCM tokent (using `to` and `registration_ids`) or sending to devices registered to `topic`.
 
-Cudos to [Pratic Butani](https://medium.com/android-school/test-fcm-notification-with-postman-f91ba08aacc3).
+Cudos to [Pratic Butani and his blog post](https://medium.com/android-school/test-fcm-notification-with-postman-f91ba08aacc3).
