@@ -1,5 +1,5 @@
 import { Observable } from 'data/observable';
-import { init, addOnMessageReceivedCallback, Message } from "nativescript-plugin-firebase";
+import { addOnPushTokenReceivedCallback, addOnMessageReceivedCallback, init, Message } from "nativescript-plugin-firebase";
 
 export class HelloWorldModel extends Observable {
 
@@ -12,7 +12,7 @@ export class HelloWorldModel extends Observable {
         this.message = "...";
         this.title = "...";
 
-        init().then(() => { console.log("Firebase INIT!!")})
+        init().then(() => { console.log("Firebase INIT!!") })
 
         addOnMessageReceivedCallback((message: Message) => {
             console.log("body: " + message.body);
@@ -20,6 +20,10 @@ export class HelloWorldModel extends Observable {
 
             this.message = "Received: " + message.body;
             this.title = message.title;
+        });
+
+        addOnPushTokenReceivedCallback((token) => {
+            console.log("Firebase push token: " + token);
         });
     }
 
